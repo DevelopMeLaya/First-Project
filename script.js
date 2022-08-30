@@ -1,3 +1,4 @@
+alert("hello");
 function see(event) {
   event.preventDefault();
 
