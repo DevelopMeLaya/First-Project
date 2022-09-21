@@ -62,7 +62,7 @@ cDegree.addEventListener("click", celsius);
 function search(event) {
   event.preventDefault();
   let cityForm = document.querySelector("#city-form");
-  let formInput = document.querySelector("#form-input");
+  let formInput = document.querySelector("#input-value");
   cityForm.innerHTML = formInput.value;
 
   let apiKey = "4b6d095dbd0105fb69f991eb71831375";
