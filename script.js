@@ -62,15 +62,15 @@ cDegree.addEventListener("click", celsius);
 function search(event) {
   event.preventDefault();
   let cityForm = document.querySelector("#city-form");
-  let formInput = document.querySelector("#input-value");
+  let formInput = document.querySelector("#form-input");
   cityForm.innerHTML = formInput.value;
 
   let apiKey = "4b6d095dbd0105fb69f991eb71831375";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${formInput.value}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
-let cityForm = document.querySelector("#city-form");
-cityForm.addEventListener("submit", search);
+let inputValue = document.querySelector("#current-temp");
+inputValue.addEventListener("submit", search);
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
