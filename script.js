@@ -72,7 +72,7 @@ inputValue.addEventListener("submit", search);
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp)
   let temperatureElement = document.querySelector("#current-temp");
-  temperatureElement.innerHTML = `${temperature}`;
+  temperatureElement.innerHTML = `${temperature}℃`;
   let cityForm = document.querySelector("#city-name");
   cityForm.innerHTML = response.data.name;
 }
