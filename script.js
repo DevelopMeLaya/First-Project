@@ -2,7 +2,7 @@ alert("hello");
 function see(event) {
   event.preventDefault();
 
-  let anotherCity = document.querySelector("#another-city");
+  let anotherCity = document.querySelector("#input-value");
 
   let cityName = document.querySelector("#city-name");
   cityName.innerHTML = `${anotherCity.value}`;
