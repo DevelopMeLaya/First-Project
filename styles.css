@@ -15,6 +15,7 @@ h1 {
 }
 
 div.class.input-group.mb-3 {
+    display: block;
     margin: 24px 24px 24px;
     resize: none;
 }
